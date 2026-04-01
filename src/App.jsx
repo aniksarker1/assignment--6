@@ -70,3 +70,18 @@ const productsData = [
         features: ["5000+ assets", "Scheduler included", "Analytics dashboard"]
     }
 ];
+
+function App() {
+    
+    const [cart, setCart] = useState([]);
+    const [activeTab, setActiveTab] = useState('products'); // 'products' or 'cart'
+
+    
+    const addToCart = (product) => {
+        if (cart.find(item => item.id === product.id)) {
+            toast.warn("Already in cart!", { position: "bottom-right", theme: "colored" });
+            return;
+        }
+        setCart([...cart, product]);
+        toast.success(`${product.name} added to cart!`, { position: "bottom-right", theme: "colored" });
+    };
