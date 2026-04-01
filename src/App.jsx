@@ -154,3 +154,24 @@ function App() {
                     <div><h2 className="text-4xl font-bold mb-1">4.9</h2><p className="text-sm opacity-90">Rating</p></div>
                 </div>
             </section>
+ 
+            <main id="products-section" className="py-20 px-4 md:px-20 text-center bg-gray-50">
+                <div className="max-w-3xl mx-auto mb-12">
+                    <h2 className="text-4xl font-bold mb-4 text-gray-900">Premium Digital Tools</h2>
+                    <p className="text-gray-500 text-lg leading-relaxed mb-8">Choose from our curated collection of premium digital products designed to boost your productivity.</p>
+                   
+                    <div className="flex justify-center bg-white p-1.5 rounded-full w-fit mx-auto border border-gray-200 shadow-sm">
+                        <button
+                            onClick={() => setActiveTab('products')}
+                            className={`px-8 py-2.5 rounded-full font-bold transition-all text-sm ${activeTab === 'products' ? 'bg-[#7E3AF2] text-white' : 'text-gray-500 hover:text-[#7E3AF2]'}`}
+                        >
+                            Products
+                        </button>
+                        <button
+                            onClick={() => setActiveTab('cart')}
+                            className={`px-8 py-2.5 rounded-full font-bold transition-all text-sm flex items-center gap-1 ${activeTab === 'cart' ? 'bg-[#7E3AF2] text-white' : 'text-gray-500 hover:text-[#7E3AF2]'}`}
+                        >
+                            Cart ({cart.length})
+                        </button>
+                    </div>
+                </div>
