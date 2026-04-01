@@ -85,3 +85,43 @@ function App() {
         setCart([...cart, product]);
         toast.success(`${product.name} added to cart!`, { position: "bottom-right", theme: "colored" });
     };
+ const removeFromCart = (id) => {
+        setCart(cart.filter(item => item.id !== id));
+        toast.error("Product removed from cart!", { position: "bottom-right", theme: "colored" });
+    };
+
+    const proceedToCheckout = () => {
+        if (cart.length === 0) return;
+        setCart([]);
+        setActiveTab('products');
+        toast.info("Checkout Successful! Cart cleared.", { position: "bottom-right", theme: "colored", style: { backgroundColor: '#7E3AF2', color: 'white' } });
+    };
+  
+    const totalPrice = cart.reduce((total, item) => total + item.price, 0);
+
+    return (
+        <div className="bg-gray-50 text-gray-800 font-sans antialiased">
+            <ToastContainer />
+
+            {/* Navbar */}
+            <nav className="navbar bg-white shadow-sm px-4 md:px-20 sticky top-0 z-50 flex justify-between">
+                <div className="flex items-center">
+                    <a className="text-2xl font-extrabold text-[#7E3AF2] cursor-pointer">DigiTools</a>
+                </div>
+                       <div className="hidden md:flex gap-8 font-semibold text-gray-600">
+                    <a href="#" className="hover:text-[#7E3AF2] transition-colors">Home</a>
+                    <a href="#products-section" className="hover:text-[#7E3AF2] transition-colors">Products</a>
+                    <a href="#pricing-section" className="hover:text-[#7E3AF2] transition-colors">Pricing</a>
+                    <a href="#" className="hover:text-[#7E3AF2] transition-colors">Blog</a>
+                </div>
+
+                <div className="flex items-center gap-4">
+                    <div className="indicator cursor-pointer mr-2" onClick={() => setActiveTab('cart')}>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span className="badge badge-sm indicator-item bg-[#7E3AF2] text-white border-none">{cart.length}</span>
+                    </div>
+                    <button className="btn bg-[#7E3AF2] text-white rounded-full px-6 border-none hover:bg-[#692cd1]">Get Started</button>
+                </div>
+            </nav>
