@@ -125,3 +125,32 @@ function App() {
                     <button className="btn bg-[#7E3AF2] text-white rounded-full px-6 border-none hover:bg-[#692cd1]">Get Started</button>
                 </div>
             </nav>
+ 
+            <header className="hero bg-white py-16 px-4 md:px-20">
+                <div className="hero-content flex-col lg:flex-row-reverse max-w-7xl mx-auto justify-between w-full">
+                    <img src="./assets/banner.png" className="w-full lg:max-w-md object-contain" alt="Banner" />
+                    <div className="text-left lg:max-w-xl">
+                        <div className="badge border-[#7E3AF2] text-[#7E3AF2] bg-purple-50 mb-6 py-3 px-4 font-semibold rounded-full">● New: AI-Powered Tools Available</div>
+                        <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-6">Supercharge Your <br /> <span className="text-[#7E3AF2]">Digital Workflow</span></h1>
+                        <p className="text-gray-500 text-lg mb-8">Access premium AI tools, design assets, and productivity software. Start creating faster today.</p>
+                        <div className="flex flex-wrap gap-4">
+                            <button className="btn bg-[#7E3AF2] text-white px-8 border-none rounded-full hover:bg-[#692cd1]" onClick={() => document.getElementById('products-section').scrollIntoView({ behavior: 'smooth' })}>Explore Products</button>
+                            <button className="btn btn-outline border-gray-300 text-gray-700 flex gap-2 rounded-full hover:bg-gray-50 hover:border-gray-400">
+                                <img src="./assets/Play.png" className="w-4" alt="Play" />
+                                Watch Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <section className="bg-[#7E3AF2] py-10">
+                <div className="container mx-auto flex flex-col md:flex-row justify-center md:gap-32 gap-10 text-white text-center">
+                    <div><h2 className="text-4xl font-bold mb-1">50K+</h2><p className="text-sm opacity-90">Active Users</p></div>
+                    <div className="hidden md:block w-px bg-white opacity-20"></div>
+                    <div><h2 className="text-4xl font-bold mb-1">200+</h2><p className="text-sm opacity-90">Premium Tools</p></div>
+                    <div className="hidden md:block w-px bg-white opacity-20"></div>
+                    <div><h2 className="text-4xl font-bold mb-1">4.9</h2><p className="text-sm opacity-90">Rating</p></div>
+                </div>
+            </section>
