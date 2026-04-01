@@ -25,5 +25,48 @@ const productsData = [
         tagType: "bg-purple-100 text-purple-600",
         features: ["2000+ templates", "Monthly updates", "Commercial license"]
     }, 
-    
+    {
+        id: 3,
+        name: "Premium Stock Assets",
+        description: "Access millions of royalty-free photos, videos, and graphics.",
+        price: 19,
+        period: "/Monthly",
+        icon: "./assets/products/portfolio.png",
+        tag: "New",
+        tagType: "bg-green-100 text-green-600",
+        features: ["10M+ assets", "Commercial use", "No attribution"]
+    },
+    {
+        id: 4,
+        name: "Automation Toolkit",
+        description: "Automate repetitive tasks and streamline your workflow.",
+        price: 79,
+        period: "/Yearly",
+        icon: "./assets/products/operation.png",
+        tag: "Popular",
+        tagType: "bg-purple-100 text-purple-600",
+        features: ["50+ automations", "API access", "Custom workflows"]
+    },
+    {
+        id: 5,
+        name: "Resume Builder Pro",
+        description: "Create professional resumes and cover letters that land interviews.",
+        price: 15,
+        period: "/One-Time",
+        icon: "./assets/products/portfolio.png",
+        tag: "New",
+        tagType: "bg-green-100 text-green-600",
+        features: ["100+ templates", "ATS optimization", "Export to PDF"]
+    },
+    {
+        id: 6,
+        name: "Social Media Content Kit",
+        description: "Complete toolkit for creating engaging social media content.",
+        price: 39,
+        period: "/Monthly",
+        icon: "./assets/products/social-media.png",
+        tag: "Best Seller",
+        tagType: "bg-orange-100 text-orange-600",
+        features: ["5000+ assets", "Scheduler included", "Analytics dashboard"]
+    }
 ];
