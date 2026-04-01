@@ -10,7 +10,7 @@ const productsData = [
         description: "Generate high-quality content, blogs, and marketing copy in seconds.",
         price: 29,
         period: "/Monthly",
-        icon: "./assets/products/writing_2327400 1.png",
+        icon: "/products/writing_2327400.png",
         tag: "Best Seller",
         tagType: "bg-orange-100 text-orange-600",
         features: ["Unlimited AI generations", "50+ writing templates", "Grammar checker"]
@@ -21,7 +21,7 @@ const productsData = [
         description: "2000+ premium templates for social media, presentations, and more.",
         price: 49,
         period: "/One-Time",
-        icon: "./assets/products/design-tool.png",
+        icon: "/products/design-tool.png",
         tag: "Popular",
         tagType: "bg-purple-100 text-purple-600",
         features: ["2000+ templates", "Monthly updates", "Commercial license"]
@@ -32,7 +32,7 @@ const productsData = [
         description: "Access millions of royalty-free photos, videos, and graphics.",
         price: 19,
         period: "/Monthly",
-        icon: "./assets/products/portfolio.png",
+        icon: "/products/portfolio.png",
         tag: "New",
         tagType: "bg-green-100 text-green-600",
         features: ["10M+ assets", "Commercial use", "No attribution"]
@@ -43,7 +43,7 @@ const productsData = [
         description: "Automate repetitive tasks and streamline your workflow.",
         price: 79,
         period: "/Yearly",
-        icon: "./assets/products/operation.png",
+        icon: "/products/operation.png",
         tag: "Popular",
         tagType: "bg-purple-100 text-purple-600",
         features: ["50+ automations", "API access", "Custom workflows"]
@@ -54,7 +54,7 @@ const productsData = [
         description: "Create professional resumes and cover letters that land interviews.",
         price: 15,
         period: "/One-Time",
-        icon: "./assets/products/portfolio.png",
+        icon: "/products/portfolio.png",
         tag: "New",
         tagType: "bg-green-100 text-green-600",
         features: ["100+ templates", "ATS optimization", "Export to PDF"]
@@ -65,7 +65,7 @@ const productsData = [
         description: "Complete toolkit for creating engaging social media content.",
         price: 39,
         period: "/Monthly",
-        icon: "./assets/products/social-media.png",
+        icon: "/products/social-media.png",
         tag: "Best Seller",
         tagType: "bg-orange-100 text-orange-600",
         features: ["5000+ assets", "Scheduler included", "Analytics dashboard"]
@@ -130,7 +130,7 @@ function App() {
             
             <header className="hero bg-white py-16 px-4 md:px-20">
                 <div className="hero-content flex-col lg:flex-row-reverse max-w-7xl mx-auto justify-between w-full">
-                    <img src="./assets/banner.png" className="w-full lg:max-w-md object-contain" alt="Banner" />
+                    <img src="/banner.png" className="w-full lg:max-w-md object-contain" alt="Banner" />
                     <div className="text-left lg:max-w-xl">
                         <div className="badge border-[#7E3AF2] text-[#7E3AF2] bg-purple-50 mb-6 py-3 px-4 font-semibold rounded-full">● New: AI-Powered Tools Available</div>
                         <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-6">Supercharge Your <br /> <span className="text-[#7E3AF2]">Digital Workflow</span></h1>
@@ -138,7 +138,7 @@ function App() {
                         <div className="flex flex-wrap gap-4">
                             <button className="btn bg-[#7E3AF2] text-white px-8 border-none rounded-full hover:bg-[#692cd1]" onClick={() => document.getElementById('products-section').scrollIntoView({ behavior: 'smooth' })}>Explore Products</button>
                             <button className="btn btn-outline border-gray-300 text-gray-700 flex gap-2 rounded-full hover:bg-gray-50 hover:border-gray-400">
-                                <img src="./assets/Play.png" className="w-4" alt="Play" /> Watch Demo
+                                <img src="/Play.png" className="w-4" alt="Play" /> Watch Demo
                             </button>
                         </div>
                     </div>
@@ -277,7 +277,7 @@ function App() {
                     <div className="p-10 bg-gray-50 rounded-3xl relative border border-gray-100 shadow-sm">
                         <span className="absolute top-6 right-6 bg-[#7E3AF2] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs">01</span>
                         <div className="bg-purple-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                            <img src="./assets/user.png" className="w-8" alt="User" />
+                            <img src="/user.png" className="w-8" alt="User" />
                         </div>
                         <h4 className="font-bold text-xl mb-2">Create Account</h4>
                         <p className="text-sm text-gray-500">Sign up for free in seconds.</p>
@@ -285,7 +285,7 @@ function App() {
                     <div className="p-10 bg-gray-50 rounded-3xl relative border border-gray-100 shadow-sm">
                         <span className="absolute top-6 right-6 bg-[#7E3AF2] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs">02</span>
                         <div className="bg-purple-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                            <img src="./assets/package.png" className="w-8" alt="Package" />
+                            <img src="/package.png" className="w-8" alt="Package" />
                         </div>
                         <h4 className="font-bold text-xl mb-2">Choose Products</h4>
                         <p className="text-sm text-gray-500">Select tools that fit your needs.</p>
@@ -293,7 +293,7 @@ function App() {
                     <div className="p-10 bg-gray-50 rounded-3xl relative border border-gray-100 shadow-sm">
                         <span className="absolute top-6 right-6 bg-[#7E3AF2] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs">03</span>
                         <div className="bg-purple-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                            <img src="./assets/rocket.png" className="w-8" alt="Rocket" />
+                            <img src="/rocket.png" className="w-8" alt="Rocket" />
                         </div>
                         <h4 className="font-bold text-xl mb-2">Start Creating</h4>
                         <p className="text-sm text-gray-500">Download and start using tools.</p>
